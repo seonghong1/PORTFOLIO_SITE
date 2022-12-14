@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { AiFillHome } from 'react-icons/ai';
 import { BsFillCloudSnowFill } from 'react-icons/bs';
+import { IoMdClock } from 'react-icons/io';
+
 import './bottombar.scss'
 import { Link } from 'react-router-dom';
 
@@ -36,7 +38,7 @@ const Bottombar = ({setNavState }) => {
                     <div className="bottom_list home_icon" onClick={setState}><AiFillHome /></div>
                 </Link>
                 <div className="bottom_list"><BsFillCloudSnowFill />{weather?.name}{weather?.main.temp}℃</div>
-                <div className="bottom_list">{hours}:{minutes}</div>
+                <div className="bottom_list"><IoMdClock />{hours}:{minutes}</div>
             </div>
         </div>
     )

@@ -95,6 +95,7 @@ $mobile: "max-width: 500px";
         .introduce {
             p {
                 font-size: 22px;
+                
             }
         }
     }
@@ -154,6 +155,9 @@ $mobile: "max-width: 500px";
         .cloneCoding_wrap {
             display: none;
         }
+        .swiper-button-next, .swiper-button-prev{
+            top: 50%;
+        }
     }
     //  ===  mobile___project  ==={
     .slide_top{
@@ -182,10 +186,13 @@ $mobile: "max-width: 500px";
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
-                background-color: white;
                 &:last-of-type{
                     margin-left: 10px;
                 }
+            }
+            .github{
+                background-image: url(../../public/img/github.png);
+                background-size: cover;
             }
         }
         .slide_wrap{
@@ -199,6 +206,13 @@ $mobile: "max-width: 500px";
                 width: 100% ;
                 height: 230px;
                 background-color: #999;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top center;
+                };
             }
         }
         .bottom{
@@ -207,9 +221,11 @@ $mobile: "max-width: 500px";
                 width: 40px;
                 height: 40px;
                 display: inline-block;
-                background-color: white;
-                border-radius: 50%;
-                margin-right: 10px
+                margin-right: 10px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+
             }
           } 
           p{

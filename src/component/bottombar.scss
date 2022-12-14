@@ -16,7 +16,9 @@
         padding: 0 7%;
         .bottom_list{
             line-height: 1;
-            
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
     }
     .home_icon{

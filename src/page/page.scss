@@ -96,6 +96,9 @@ $name_font: 'Jua', sans-serif;
             }
         }
         .skills_info_text{
+            margin-top: 30px;
+            white-space: pre-wrap;
+            text-align: center;
             width: 100%;
             h1{
                 text-align: center;
@@ -103,11 +106,10 @@ $name_font: 'Jua', sans-serif;
                 font-size: 40px;
                 font-weight: 500;
             }
-            
-            
             p{
+                padding: 0 30px;
+                font-size: 20px;
                 width: 100%;
-                padding-left: 10%;
                 box-sizing: border-box;
             }
         }
@@ -300,20 +302,32 @@ width: 95%;
         @include page_title;
     }
 }
-
+.mySwiper{
+    height: 100%;
+}
 .project_wrap {}
 
 .project_item {
+    position: relative;
     margin: 0 auto;
     background-color: $sub_dark;
     width: 77%;
     padding: 50px 0 50px 60px;
     border-radius: 30px;
-
     &:not(:last-of-type) {
         margin-bottom: 200px;
     }
-
+    .number{
+        position: absolute;
+        color: white;
+        top: 0;
+        left: 20px;
+        transform: translateY(-120%);
+        font-weight: 900;
+        border: 2px solid white;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
     .project_name {
         color: white;
         font-size: 40px;
@@ -332,22 +346,29 @@ width: 95%;
         background-color: gray;
         border-radius: 30px;
         margin-right: 50px;
+        overflow: hidden;
+        img{
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
     }
+    
 
     .text_wrap {
         width: 60%;
         position: relative;
-
         .project_skills {
             margin: 30px 0;
             display: flex;
-
             li {
                 width: 50px;
                 height: 50px;
-                background-color: white;
-                border-radius: 50%;
                 margin-right: 15px;
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
             }
         }
 
@@ -403,6 +424,11 @@ width: 95%;
 .cloneCoding_title{
     @include page_title
 }
+.cloneCoding_style{
+    .swiper-button-next, .swiper-button-prev{
+        top: 50% !important;
+    }
+}
 .cloneCoding_wrap{
     display: flex;
     color: white;
@@ -421,7 +447,11 @@ width: 95%;
         border-radius: 20px;
         margin-bottom: 50px;
         .name{
-
+            font-size: 22px;
+            font-weight: 600;
+    
+            padding: 8px 15px;
+            border-radius: 10px;
         }
         .img_wrap{
             width: 80%;
@@ -467,11 +497,11 @@ background-image: url(../../public/img/css.png)
         .move{
             margin-top: 10px;
             @extend .skill_list;
-            span{
+            span, a{
                width: 60px;
                height: 60px;
                border-radius: 50%;
-               background-color: rgba(0, 0, 0, 0.9);
+               background-color: $sub_dark2;
                display: block;;
                margin-right: 20px;
                background-size: cover;
@@ -481,6 +511,10 @@ background-image: url(../../public/img/css.png)
             }
             .github{
                 background-image: url(../../public/img/github.png)
+            }
+            .site{
+                font-size: 25px;
+               
             }
         }
     }
