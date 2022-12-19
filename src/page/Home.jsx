@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 const Home = () => {
     useEffect(()=>{
         AOS.init();
-    })
+    },[])
     const [introduce, setIntroduce] = useState(false)
     const home_skills = [
         {

@@ -9,7 +9,7 @@ const Skills = () => {
 
     useEffect(()=>{
         AOS.init();
-    })
+    },[])
 
     const skill_items = [
         {

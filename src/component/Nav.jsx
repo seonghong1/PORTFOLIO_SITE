@@ -17,7 +17,6 @@ const Nav = ({ navState, setNavState }) => {
         {id:3, to:'/contact', icon:<MdContactMail />, title:'CONTACT', setstate:'contact'}
     ]
 
-   console.log(navState)
     return (
         <nav className='nav'>
             <ul className='navList_wrap'>

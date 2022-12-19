@@ -158,6 +158,21 @@ $mobile: "max-width: 500px";
         .swiper-button-next, .swiper-button-prev{
             top: 50%;
         }
+        .detail_info_m{
+            height: 100px;
+            overflow: hidden;
+            border: 2px solid white;
+            box-sizing: border-box;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            overflow-y: scroll;
+            height: 110px;
+            span{
+                display: block;
+                line-height: 1.7;
+            }
+        }
     }
     //  ===  mobile___project  ==={
     .slide_top{
@@ -174,26 +189,15 @@ $mobile: "max-width: 500px";
         color: white;;
         box-sizing: border-box;
         padding: 15px 20px 30px;
+        
         .slide_title{
-            font-size: 30px;
+            font-size: 26px;
             font-weight: 500;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             margin-bottom: 15px;
-            .move span{
-                display: inline-block;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                &:last-of-type{
-                    margin-left: 10px;
-                }
-            }
-            .github{
-                background-image: url(../../public/img/github.png);
-                background-size: cover;
-            }
+  
         }
         .slide_wrap{
             
@@ -207,12 +211,49 @@ $mobile: "max-width: 500px";
                 height: 230px;
                 background-color: #999;
                 overflow: hidden;
+                position: relative;
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     object-position: top center;
                 };
+                .move{
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    z-index: 2;
+                    display: flex;
+                    align-items: center;
+                }
+                .move a{
+                    top: 5px;
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    font-size: 10px;
+                    opacity: 0.7;
+                    
+                    &:hover{
+                        opacity: 1;
+                    }
+                    &:first-of-type{
+            
+                    }
+                    &:last-of-type{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin-left: 10px;
+                    background-color: black;
+                    }
+                }
+                .github{
+                    background-image: url(../../public/img/github.png);
+                    background-size: cover;
+                }
             }
         }
         .bottom{

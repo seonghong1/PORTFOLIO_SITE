@@ -31,7 +31,7 @@ const About = () => {
 
   useEffect(()=>{
     AOS.init();
-})
+},[])
 
   return (
     <div className="about">

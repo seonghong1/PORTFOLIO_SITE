@@ -10,7 +10,7 @@ const Contact = () => {
 
   useEffect(()=>{
     AOS.init();
-})
+},[])
 
   return (
     <div  className='contact'>
