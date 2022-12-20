@@ -19,18 +19,23 @@ const Home = () => {
         {
             id: 0, color: "#61dafc", img: "img/react.png", title: "React",
             text: `- Redux를 활용한 상태관리 경험이 있으며 활용할 수 있습니다.
+            \n- Redux-Thunk를 활용하여 비동기적으로 액션함수를 활용할 수 있습니다.
             \n- React-Router를 활용한 SPA 개발 경험이 있고, 활용할 수 있습니다.
-            \n- 다양한 Hooks 사용할 수 있습니다.
+            \n- json-server를 활용하여 가상의 서버 공간을 만들고 개발할 수 있습니다.
+            \n- 다양한 외부 API를 활용한 개발 경험이 있습니다.
+            \n- 다양한 React Hooks를 사용할 수 있습니다.
             \n      * useState  * useEffect *useContext
-            \n      * useReducer    *useMemo    *useRef`
+            \n      * useReducer    *useMemo    *useRef
+            `
         },
         {
             id: 1, color: "#f7df1e", img: "img/js.png", title: "Javascript",
             text: `- ES6+ 문법에 익숙합니다.
             \n- 비동기 처리를 이해하며 활용할 수 있습니다. ( promise, acync, await )
+            \n- 자바스크립트의 내장 객체, 배열 내장함수에 대해 이해하며, 활용할 수 있습니다
             \n- 라이브러리를 사용하지 않고 다양한 애니메이션, 이벤트들을 구현할 수 있습니다.
-            \n- JSON을 통해 데이터를 활용할 수 있습니다.
-             `
+            \n- axios, fetch를 활용하여 api를 불러오고, 활용할 수 있습니다.
+             `, 
 
         },
         {
@@ -67,8 +72,7 @@ const Home = () => {
         },
         {
             id: 6, color: "#f05133", img: "img/git.png", title: "Git",
-            text: `- 프로젝트의 기반을 잡는 와이어프레임을 작성할 수 있습니다.
-            \n- Prototype을 활용해 실제 디바이스에서의 모습과 이벤트들을 구현해낼 수 있습니다.
+            text: `- git을 사용하여 브랜치, 프로젝트를 관리할 수 있습니다.
         `
 
         },
@@ -80,7 +84,8 @@ const Home = () => {
         },
         {
             id: 8, color: "#10b981", img: "img/figma.png", title: "Figma",
-            text: `- git을 사용하여 프로젝트 관리를 할 수 있습니다.
+            text: `- 프로젝트의 기반을 잡는 와이어프레임을 작성할 수 있습니다.
+            \n- Prototype을 활용해 실제 디바이스에서의 모습과 이벤트들을 구현해낼 수 있습니다.
             `
 
         },

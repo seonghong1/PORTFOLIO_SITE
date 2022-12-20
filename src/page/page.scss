@@ -69,7 +69,7 @@ $name_font: 'Jua', sans-serif;
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: $sub_dark;
+        background-color: $sub_dark2;
         z-index: 1;
         transition: all 0.3s;
         display: flex;
@@ -96,13 +96,13 @@ $name_font: 'Jua', sans-serif;
             }
         }
         .skills_info_text{
-            margin-top: 30px;
+            margin-top: 15px;
             white-space: pre-wrap;
             text-align: center;
             width: 100%;
             h1{
                 text-align: center;
-                margin: 50px 0 20px;
+                margin: 20px 0;
                 font-size: 40px;
                 font-weight: 500;
             }
@@ -281,12 +281,17 @@ width: 95%;
             }
         }
     }
-
+    .react img{
+        width: 300px;
+    }
     .html img {
-        width: 150px;
+        width: 180px;
     }
     .sass img{
         width: 300px;
+    }
+    .css img{
+        width: 200px;
     }
 }
 
@@ -513,10 +518,18 @@ width: 95%;
         padding: 20px 0;
         border-radius: 20px;
         margin-bottom: 50px;
+        &:nth-of-type(9){
+         .swiper-slide{
+            overflow-y: hidden !important;
+         }
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
         .name{
             font-size: 22px;
             font-weight: 600;
-    
             padding: 8px 15px;
             border-radius: 10px;
         }
@@ -526,12 +539,13 @@ width: 95%;
             background-color: white;
             border-radius: 20px;
             margin: 15px 0 10px;
-            overflow: hidden;
+            .swiper-slide{
+                overflow-y: scroll;
+                border-radius: 20px;
+            }
             img{
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: top center;
+                object-position: center center;
             }
         }
         
@@ -564,27 +578,48 @@ background-image: url(../../public/img/css.png)
         .move{
             margin-top: 10px;
             @extend .skill_list;
-            span, a{
+            a{
                width: 60px;
                height: 60px;
                border-radius: 50%;
-               background-color: $sub_dark2;
-               display: block;;
                margin-right: 20px;
-               background-size: cover;
-               display: flex;
-               justify-content: center;
-               align-items: center;
             }
             .github{
+                background-size: cover;
+                display: block;;
                 background-image: url(../../public/img/github.png)
             }
-            .site{
-                font-size: 25px;
-               
+            a{
+                font-size: 9px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                opacity: 0.5;
+                width: 50px;
+                height: 50px;
+                background-color: black;
+                &:hover{
+                    opacity: 1;
+                }
             }
         }
     }
+}
+.swiper-slide{
+    &::-webkit-scrollbar{
+        width: 10px;
+        
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $point_color;
+        border-radius: 10px;
+        
+    }
+    &::-webkit-scrollbar-track{
+        background-color: $main_color;
+        border-radius: 10px;
+    } 
 }
 // project_slide{
 .project_mobile{

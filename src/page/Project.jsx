@@ -205,36 +205,64 @@ const project = [
 console.log(project[0].detail_info)
 const clonecoding = [
   {
-    title: "INZENT", img: ["project/반응형_인젠트_pc.png", "project/반응형_인젠트_pc.png", "project/반응형_인젠트_pc.png"],
-    skill: ["../../img/js.png", "../../img/jquery.png", "../../img/html.png", "../../img/css.png"]
+    title: "INZENT", img: ["project/반응형_인젠트_pc01.png", "project/반응형_인젠트_pc02.png"],
+    skill: ["../../img/js.png", "../../img/jquery.png", "../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/CLONE_inzent",
+    github:"https://seonghong1.github.io/CLONE_inzent/"
   },
   {
-    title: "URBAN LAUNDERTTE", img: ["project/반응형_어반런드렛_pc.png", "project/반응형_인젠트_pc.png", "project/반응형_인젠트_pc.png"],
-    skill: ["../../img/js.png", "../../img/jquery.png", "../../img/html.png", "../../img/css.png"]
+    title: "URBAN LAUNDERTTE", img: ["project/반응형_어반런드렛_pc01.png"],
+    skill: ["../../img/js.png", "../../img/jquery.png", "../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/CLONE_Urbanlaunderette",
+    github:"https://seonghong1.github.io/CLONE_Urbanlaunderette/"
   },
   {
-    title: "타이어테크", img: ["project/반응형_타이어테크_pc.png", "project/반응형_인젠트_pc.png", "project/반응형_인젠트_pc.png"],
-    skill: ["../../img/jquery.png", "../../img/html.png", "../../img/css.png"]
+    title: "타이어테크", img: ["project/반응형_타이어테크_pc01.png"],
+    skill: ["../../img/jquery.png", "../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/CLONE_Tire-tech",
+    github:"https://seonghong1.github.io/CLONE_Tire-tech/"
   },
   {
-    title: "빙그레", img: ["project/반응형_빙그레_pc.png", "project/반응형_인젠트_pc.png", "project/반응형_인젠트_pc.png"],
-    skill: ["../../img/js.png", "../../img/jquery.png", "../../img/html.png", "../../img/css.png"]
+    title: "여행사 홈페이지(창작)", img: ["project/여행사_창작.png"],
+    skill: ["../../img/jquery.png", "../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/CLONE_Travel",
+    github:"https://seonghong1.github.io/CLONE_Travel/"
   },
   {
-    title: "우성사료", img: ["project/클론코딩_우성사료.png", "project/반응형_인젠트_pc.png", "project/반응형_인젠트_pc.png"],
-    skill: ["../../img/jquery.png", "../../img/html.png", "../../img/css.png"]
+    title: "폴로(bootstrap위주)", img: ["project/부트스트랩_polo.png"],
+    skill: ["../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/Bootstrap_polo",
+    github:"https://seonghong1.github.io/Bootstrap_polo/"
   },
   {
-    title: "INSUROBO", img: ["project/반응형_인슈로보_pc.png", "project/반응형_인젠트_pc.png", "project/반응형_인젠트_pc.png"],
-    skill: ["../../img/jquery.png", "../../img/html.png", "../../img/css.png"]
+    title: "빙그레", img: ["project/반응형_빙그레_pc01.png"],
+    skill: ["../../img/js.png", "../../img/jquery.png", "../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/CLONE_Binggrae",
+    github:"https://seonghong1.github.io/CLONE_Binggrae/"
   },
   {
-    title: "아산병원_모바일", img: ["project/적응형_아산병원.png", "project/반응형_인젠트_pc.png", "project/반응형_인젠트_pc.png"],
-    skill: ["../../img/jquery.png", "../../img/html.png", "../../img/css.png"]
+    title: "우성사료", img: ["project/우성사료_pc01.png"],
+    skill: ["../../img/jquery.png", "../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/CLONE_Woosungfeed",
+    github:"https://seonghong1.github.io/CLONE_Woosungfeed/"
   },
   {
-    title: "도시락통", img: ["project/반응형_도시락통_pc.png", "project/반응형_인젠트_pc.png", "project/반응형_인젠트_pc.png"],
-    skill: ["../../img/html.png", "../../img/css.png"]
+    title: "INSUROBO", img: ["project/반응형_인슈로보_pc01.png"],
+    skill: ["../../img/jquery.png", "../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/CLONE-_Insurobo",
+    github:"https://seonghong1.github.io/CLONE-_Insurobo/"
+  },
+  {
+    title: "아산병원_모바일", img: ["project/적응형_아산병원_pc01.png", "project/적응형_아산병원_pc02.png", "project/적응형_아산병원_pc03.png", "project/적응형_아산병원_pc04.png"],
+    skill: ["../../img/jquery.png", "../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/CLONE_Asan-Medical-Cente",
+    github:"https://seonghong1.github.io/CLONE_Asan-Medical-Cente/"
+  },
+  {
+    title: "도시락통", img: ["project/반응형_도시락통_pc01.png"],
+    skill: ["../../img/html.png", "../../img/css.png"],
+    site: "https://github.com/seonghong1/CLONE_Dosiraktong",
+    github:"https://seonghong1.github.io/CLONE_Dosiraktong/"
   }
 ]
 // 프로젝트 내부 이미지는 슬라이드로 설정
@@ -309,8 +337,8 @@ const Project = () => {
                     <div className="top">
                       <div className="img_wrap">
                       <div className="move">
-                      <a href={item.github} className='github'></a>
-                      <a href={item.siteUrl} className='site'>
+                      <a href={item.github} className='github' target="_blank"></a>
+                      <a href={item.siteUrl} className='site' target="_blank">
                         <span>
                           사이트<br />바로가기
                           </span>
@@ -359,15 +387,15 @@ const Project = () => {
                 })}
               </div>
               <div className="move">
-                <span className="github"></span>
-                <a href='#' className="site"><ImExit /></a>
+                <a className="github" href={item.github} target="_blank"></a>
+                <a href={item.site}  target="_blank" className="site"><span>사이트<br />바로가기</span></a>
               </div>
             </article>
           )
         })}
       </div>
       {/* ===== 클론코딩 모바일 버전 입니다 ===== */}
-      <div className="project_mobile cloneCoding_style">
+      <div className="cloneCoding_m project_mobile cloneCoding_style">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -391,8 +419,8 @@ const Project = () => {
                   <div className="slide_title">
                     <h3>{item.title}</h3>
                     <div className="move">
-                      <span className='github'></span>
-                      <span className='site'></span>
+                      <a href={item.github} target="_blank" className='github'></a>
+                      <a href={item.site} target="_blank" className='site'><span>사이트<br />바로가기</span></a>
                     </div>
                   </div>
                   <div className="slide_wrap">
@@ -400,7 +428,7 @@ const Project = () => {
                       <div className="img_wrap">
                         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                           {item.img.map((img) => {
-                            return <SwiperSlide><img src={img} alt="" /></SwiperSlide>
+                            return <SwiperSlide><div className="clone_m"><img src={img} alt="" /></div></SwiperSlide>
                           })}
                         </Swiper>
                       </div>
