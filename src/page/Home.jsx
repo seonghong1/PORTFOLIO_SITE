@@ -11,9 +11,9 @@ import { useEffect } from 'react';
 // yarn add aos
 // yarn add swiper
 const Home = () => {
-    useEffect(()=>{
+    useEffect(() => {
         AOS.init();
-    },[])
+    }, [])
     const [introduce, setIntroduce] = useState(false)
     const home_skills = [
         {
@@ -32,10 +32,11 @@ const Home = () => {
             id: 1, color: "#f7df1e", img: "img/js.png", title: "Javascript",
             text: `- ES6+ 문법에 익숙합니다.
             \n- 비동기 처리를 이해하며 활용할 수 있습니다. ( promise, acync, await )
+            \n- manifest와 sw-precache라이브러리를 활용하여 PWA를 개발할 수 있습니다.
             \n- 자바스크립트의 내장 객체, 배열 내장함수에 대해 이해하며, 활용할 수 있습니다
             \n- 라이브러리를 사용하지 않고 다양한 애니메이션, 이벤트들을 구현할 수 있습니다.
             \n- axios, fetch를 활용하여 api를 불러오고, 활용할 수 있습니다.
-             `, 
+             `,
 
         },
         {
@@ -93,7 +94,7 @@ const Home = () => {
 
     const [skills_item, setSkills_item] = useState(1)
     const [info_on, setInfo_on] = useState(false)
-
+    const [text, setText] = useState(true)
     return (
         <div className='home'>
             <div data-aos-duration="1300" data-aos-delay="200" data-aos="fade-right" className="home_left">
@@ -105,26 +106,50 @@ const Home = () => {
                         <img src={home_skills[skills_item].img} alt="" />
                     </div>
                     <div className="skills_info_text">
-                        <h1 style={{color:home_skills[skills_item].color}}>{home_skills[skills_item].title}</h1>
+                        <h1 style={{ color: home_skills[skills_item].color }}>{home_skills[skills_item].title}</h1>
                         <p>{home_skills[skills_item].text}</p>
                     </div>
+                </div>
+                <div className="text_wrap">
+                    <span>Front-end</span>
+                    <span>Developer</span>
                 </div>
                 <div className="img_wrap">
                     <img src="" alt="" />
                 </div>
-                <div className="text_wrap">
-                    <span>Front-end</span>
-                    <span>developer</span>
-                </div>
+                <h2 className='name'>조성홍</h2>
             </div>
             <div data-aos-duration="1300" data-aos-delay="400" data-aos="fade-up" className="home_right">
                 <div className="close_N_open" style={{ opacity: introduce ? 0.05 : 1 }} onClick={() => setIntroduce(!introduce)}>
                     {introduce ? <AiOutlineCheckCircle /> : <AiOutlineCloseCircle />}
                 </div>
                 <div className="introduce" style={{ opacity: introduce ? 0 : 0.98, transition: 'all 0.4s', height: introduce ? '0%' : '90%' }}>
-                    <p style={introduce ? { display: 'none' } : { display: 'block' }}>
-                    간단한 자기소개 및 서두  입니다. 
-                    </p>
+                    <div style={introduce ? { display: 'none' } : { display: 'flex' }}>
+                        <div className="introduce_item" onClick={()=> setText(!text)}>
+                            <h2 style={text? {animationName: 'h2_click'}:{animationName:"none"}}>👨‍💻꾸준한 학습과 자기관리로 <br />어제보다 발전하는 개발자 조성홍 입니다.</h2>
+                            <p style={text?{ display:'none'}:{display:'block'}}>매일 아침 5시 30분에 기상해 운동을 하며 <br />
+                                늘 자기 전 개발 공부를 통해 하루하루 성장해 나아가고 있습니다.</p>
+                        </div>
+                        <div className="introduce_item" onClick={()=> setText(!text)}>
+                            <h2 style={text? {animationName: 'h2_click'}:{animationName:"none"}}>👨‍🔧끈기와 성실함에 대해</h2>
+                            <p style={text?{ display:'none'}:{display:'block'}}>호텔에서 2년, 피자헛 3년, 웨딩홀 3년 등등 다양한 조직에서 소속되어 근무해 본 경험이 있습니다.<br />
+                                근무를 하는 동안 지각, 조퇴를 해본 경험이 단 한 번도 없습니다.<br />
+                                또한 늘 배우는 자세로 임하여 입사 동료, 상급자분들 보다 더 많고 다양한<br />
+                                일들을 할 수 있는 인재로 거듭나게 되었습니다.<br />
+                                젊은 나이지만 그 누구보다 책임감 있고 능동적인 자세로 임하여<br />
+                                어느 위치에서든 중요한 인재로 자리매김할 것입니다.
+                            </p>
+                        </div>
+                        <div className="introduce_item" onClick={()=> setText(!text)}>
+                            <h2 style={text? {animationName: 'h2_click'}:{animationName:"none"}}>🕵️‍♂️모르는 것에 대한 나의 자세</h2>
+                            <p style={text?{ display:'none'}:{display:'block'}}>개발을 공부하며 많은 문제에 직면했었던 경험이 있습니다.<br />
+                                문제를 해결에 그치지 않고 다양한 예제를 통해 <br />
+                                스스로 내것으로 만드며, <br />
+                                코드가 실행부터 리턴 결과가 나오기까지의 과정을 <br />
+                                하나하나 이해하고, 직접 말로 설명하며 학습하는 습관을 길러왔습니다.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div className="skills_img_wrap">
                     {home_skills.map((item) => {

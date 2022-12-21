@@ -15,7 +15,7 @@ const Skills = () => {
         {
              id: 1, img: "img/react.png", title:"React", 
              text: `- Redux를 활용한 상태관리 경험이 있으며 활용할 수 있습니다.
-                \n- Redux-Thunk를 활용하여 비동기적으로 액션함수를 활용할 수 있습니다.
+                \n- Redux-Thunk를 활용하여 비동기형태로 구현할 수 있습니다..
                 \n- React-Router를 활용한 SPA 개발 경험이 있고, 활용할 수 있습니다.
                 \n- json-server를 활용하여 가상의 서버 공간을 만들고 개발할 수 있습니다.
                 \n- 다양한 외부 API를 활용한 개발 경험이 있습니다.
@@ -29,7 +29,8 @@ const Skills = () => {
              id: 2, img: "img/js.png", title:"Javascript", 
              text: `- ES6+ 문법에 익숙합니다.
                 \n- 비동기 처리를 이해하며 활용할 수 있습니다. ( promise, acync, await )
-                \n- 자바스크립트의 내장 객체, 배열 내장함수에 대해 이해하며, 활용할 수 있습니다
+                \n- manifest와 sw-precache라이브러리를 활용하여 PWA를 개발할 수 있습니다.
+                \n- 자바스크립트의 내장 객체, 배열 내장함수에 대해 이해하며, 활용할 수 있습니다.
                 \n- 라이브러리를 사용하지 않고 다양한 애니메이션, 이벤트들을 구현할 수 있습니다.
                 \n- axios, fetch를 활용하여 api를 불러오고, 활용할 수 있습니다.
                  `, 

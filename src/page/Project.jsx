@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ImExit } from 'react-icons/im';
 
 
 /*
@@ -28,7 +27,7 @@ const project = [
       "💁‍♂️ 간단한 설명 💁‍♂️",
       "👉 react-router을 사용해 SPA형태로 구성되었습니다.",
       "👉 axios를 활용해 데이터를 불러왔으며, async, await를 사용해 각각의 api를 비동기적으로 불러왔습니다.",
-      "👉 thunk를 활용해 dispatch의 매개변수에 액션객체가 아닌 API를 불러오고 다시 dispatch를 해주는 함수를 넣어 API를 불러오는 과정을 비동기적으로 구현하였습니다.",
+      "👉 thunk를 활용해 dispatch의 매개변수에 객체가 아닌 API를 불러오고 다시 dispatch를 해주는 액션함수를 넣어 API를 불러오는 과정을 비동기적으로 구현하였습니다.",
       "👉 홈화면이 렌더링시 useEffect를 사용해 dispatch(api.get하는 액션함수)가 실행되며 데이터를 불러와줍니다.",
       "👉 Toprated, Upcoming, Popular 3가지 타입의 api를 불러와 슬라이드를 구성하였습니다.",
       "👉 각 영화를 클릭시 path='/movies/:id'로 이동되며 detail컴포넌트를 불러와줍니다. 클릭시 해당 /:id값에 영화의 id가 들어가며,",
@@ -61,14 +60,14 @@ const project = [
 
   {
     title: "🌟조성홍의 포트폴리오 사이트🌟",
-    pc_img: ["project/프로젝트_날씨앱_pc01.png", "project/프로젝트_날씨앱_pc02.png"],
-    m_img: ["project/프로젝트_날씨앱_pc01.png", "project/프로젝트_날씨앱_pc02.png"],
+    pc_img: ["project/프로젝트_포트폴리오_pc01.png", "project/프로젝트_포트폴리오_pc02.png", "project/프로젝트_포트폴리오_pc03.png", "project/프로젝트_포트폴리오_pc04.png"],
+    m_img: ["project/프로젝트_포트폴리오_m01.png", "project/프로젝트_포트폴리오_m02.png", "project/프로젝트_포트폴리오_m03.png"],
     skills: ["../../img/react.png", "../../img/js.png", "../../img/sass.png", "../../img/html.png", "../../img/css.png"],
-    info: "저의 정보와 기술 이해도, 작업물들이 담겨 있는 사이트 입니다." +
+    info: "저의 인적 정보와 기술 이해도, 작업물들이 담겨 있는 사이트 입니다." +
       "(React-Router, Swiper, AOS)",
     detail_info: [
       "💁‍♂️ 간단한 설명 💁‍♂️",
-      "👉 router을 사용해 SPA형태로, 보는 사람 입장에서 원하는 정보를 클릭해서 볼 수 있도록 구현하였습니다.",
+      "👉 router을 사용해 SPA형태로, 보는 사람의 관점에서 원하는 정보를 클릭해서 볼 수 있도록 구현하였습니다.",
       "👉 SPA형태의 사이트에서 동적인 요소를 추가하고자 AOS라이브러리를 사용하여 애니메이션을 진행하였습니다.",
       "👉 각각의 컴포넌트 내부의 데이터들은 상단에 배열형태로 저장해 불필요한 반복을 줄여 html을 작성했습니다.",
       "👉 스타일 구성으로는 Sass를 사용하여 변수, mixin, extend 등과 같이 유용한 기능들은 사용하여 작업하게 되었습니다.",
@@ -87,7 +86,7 @@ const project = [
     pc_img: ["project/프로젝트_투두리스트_m01.png", "project/프로젝트_투두리스트_m02.png"],
     m_img: ["project/프로젝트_투두리스트_m01.png", "project/프로젝트_투두리스트_m02.png"],
     skills: ["../../img/react.png", "../../img/js.png", "../../img/sass.png", "../../img/css.png", "../../img/html.png"], 
-    info: "TODO LIST입니다. 오늘 하루 해야될 일을 기록해보세요 ❗ (useContext, useEffect, useState)",
+    info: "TODO LIST입니다. 오늘 하루 해야될 일들을 기록해보세요 ❗ (useContext, useEffect, useState)",
     detail_info: [
       "💁‍♂️ 간단한 설명 💁‍♂️",
       "👉 [추가] : input창에 할일을 입력후 submit시 매개변수로 받은 함수에 인자로 입력한 텍스트 값이 전달된다.",
@@ -112,7 +111,7 @@ const project = [
     pc_img: ["project/프로젝트_폰북_pc01.png", "project/프로젝트_폰북_pc02.png"],
     m_img: ["project/프로젝트_폰북_m01.png", "project/프로젝트_폰북_m02.png"],
     skills: ["../../img/react.png", "../../img/js.png", "../../img/sass.png", "../../img/css.png", "../../img/html.png"], 
-    info: "번호를 저장하고 검색 기능을 이용해보세요! (Redux, React-Bootstrap, Post CSS)",
+    info: "번호를 저장하고 검색 기능을 이용해보세요 ❗ (Redux, React-Bootstrap, Post CSS)",
     detail_info: [
       "💁‍♂️ 간단한 설명 💁‍♂️",
       "👉 input에 이름과 전화번호를 입력하고 submit시 dispatch함수가 실행되며 값이 reducer로 전달됩니다.",
@@ -156,7 +155,7 @@ const project = [
     pc_img: ["project/프로젝트_날씨앱_pc01.png", "project/프로젝트_날씨앱_pc02.png"],
     m_img: ["project/프로젝트_날씨앱_m01.png", "project/프로젝트_날씨앱_m02.png"],
     skills: ["../../img/react.png", "../../img/js.png", "../../img/css.png", "../../img/html.png"], 
-    info: "현재 날씨와 도시 버튼을 클릭해 날씨를 확인해보세요!",
+    info: "현재 날씨와 도시 버튼을 클릭해 날씨를 확인해보세요 ❗",
     detail_info: [
       "💁‍♂️ 간단한 설명 💁‍♂️",
       "👉 weather API를 fetch를 이용하여 갖고오고, useState를 사용해 값을 저장했습니다",
@@ -174,7 +173,7 @@ const project = [
     pc_img: ["project/프로젝트_가위바위보게임_pc01.png", "project/프로젝트_가위바위보게임_pc02.png", "project/프로젝트_가위바위보게임_pc03.png"],
     m_img: ["project/프로젝트_가위바위보게임_m01.png", "project/프로젝트_가위바위보게임_m02.png", "project/프로젝트_가위바위보게임_m03.png"],
     skills: ["../../img/react.png", "../../img/js.png", "../../img/css.png", "../../img/html.png"], 
-    info: "가위바위보 게임 입니다. 컴퓨터를 이겨보세요 !",
+    info: "가위바위보 게임 입니다. 컴퓨터를 이겨보세요 ❗",
     detail_info: [
       "💁‍♂️ 간단한 설명 💁‍♂️",
       "👉 클릭시 컴퓨터의 랜덤한 값, 내가 클릭한 아이템의 값을 나타내는 함수가 호출됩니다.",
@@ -190,16 +189,29 @@ const project = [
     siteUrl:"https://master--seonghong-rockscissorspaper.netlify.app"
   },
   {
-    title: "Project name",
-    pc_img: ["project/프로젝트_날씨앱_pc01.png", "project/프로젝트_날씨앱_pc02.png"],
-    m_img: ["project/프로젝트_날씨앱_pc01.png", "project/프로젝트_날씨앱_pc02.png"],
-    skills: ["../../img/js.png", "../../img/sass.png"], info: "프로젝트에 대해서 간단한 설명입니다. 프로젝트에 대해서 간단한 설명입니다.",
+    title: "📸PWA 네이버 클라우드📸",
+    pc_img: ["project/프로젝트_네이버클라우드_pc03.png","project/프로젝트_네이버클라우드_pc04.png", "project/프로젝트_네이버클라우드_pc09.png", "project/프로젝트_네이버클라우드_pc05.png","project/프로젝트_네이버클라우드_pc06.png","project/프로젝트_네이버클라우드_pc07.png","project/프로젝트_네이버클라우드_pc08.png", "project/프로젝트_네이버클라우드_pc10.png"],
+    m_img: ["project/프로젝트_네이버클라우드_m01.png","project/프로젝트_네이버클라우드_m02.png", "project/프로젝트_네이버클라우드_m03.png", "project/프로젝트_네이버클라우드_m04.png","project/프로젝트_네이버클라우드_m05.png","project/프로젝트_네이버클라우드_m06.png","project/프로젝트_네이버클라우드_m07.png", "project/프로젝트_네이버클라우드_m08.png"],
+    skills: ["../../img/js.png", "../../img/sass.png","../../img/html.png"], 
+    info: "사진 업로드, 공유 등 어플의 형태와 유사합니다 ❗(sw-precache)",
     detail_info: [
-      "aa",
-      "bb"
+      "💁‍♂️ 간단한 설명 💁‍♂️",
+      "🔔TIP 메인 홈페이지 구경하기 -> 우측상단 메뉴의 네이버클라우드 이미지를 클릭하기 -> 네이버클라우드 어플로 도착 !",
+      "👉버튼을 통해 이동할 수 있는 페이지는 깜빡이도록 애니메이션을 적용하였습니다.",
+      "👉사진을 업로드 하는 기능은 자바스크립트의 FileReader객체를 사용하여 구현했으며,",
+      "사진을 클릭시 큰 이미지로 나오고, 사진이 업로드 되는 시점을 Date객체를 사용해 나타내었습니다.",
+      "👉또한 아래 공유 버튼을 클릭하면 카카오톡 공유 API를 사용해 실제 공유기능을 구현하였습니다.",
+      "👉이벤트 페이지에서의 D-DAY는 기준이 되는 날짜 - 현재날짜를 연산해 실제 D-DAY를 표현하였으며, 룰렛의 형태는 canvas태그를 사용해 구현하였습니다",
+      "👉마지막으로 manifest를 직접 작성하고, sw-precache-config.js파일에 sw-precache.js파일로 업로드할 파일의 경로를 정의해 준 뒤 sw-precache라이브러리를 사용하여 Service-worker.js파일의 내용을 토대로 sw파일을 생성하였습니다.",
+      "💡 느낀점, 알게된점, 나의 생각 💡",
+      "👉네이버 클라우드를 작업하게 되어 PWA에 대해 이해할 수 있는 좋은 기회가 되었다.",
+      "👉최대한 외부 라이브러리를 사용하지 않고 자바스크립트만을 사용하여 여러 이벤트를 접목시키고 싶어 다양한 기능들을 넣어보게 되었다.",
+      "👉앞으로 이미지를 새로고침해도 남아있도록 구현하고, 삭제기능 등등 실제 제공되는 서비스와 일치하도록 완성하고싶다.",
+      "👉사이트의 규모가 클수록 파일의 목록을 직접 작성하기에는 무리가 있지만 sw-precache 라이브러리를 사용하게되면 경로와 규칙에 해당되는 파일들을 자동으로 업로드 해주고, 기타 요소들을 작성해주어서 유용한 라이브러리라고 생각이 들었다.",
+      "👉자바스크립트를 사용하여 무궁무진한 기능들을 넣을 수 있어, 다른 프로젝트에서도 자바스크립트만을 사용하여 다양한 기능들을 넣어 완벽한 하나의 서비스를 만들어보고 싶다고 생각이 들었다"
     ],
-    github:"",
-    siteUrl:""
+    github:"https://github.com/seonghong1/PWA_NaverCloud",
+    siteUrl:"https://seonghong1.github.io/PWA_NaverCloud/"
   },
 ]
 console.log(project[0].detail_info)
