@@ -18,11 +18,10 @@ const Home = () => {
     const home_skills = [
         {
             id: 0, color: "#61dafc", img: "img/react.png", title: "React",
-            text: `- Redux를 활용한 상태관리 경험이 있으며 활용할 수 있습니다.
-            \n- Redux-Thunk를 활용하여 비동기적으로 액션함수를 활용할 수 있습니다.
+            text: `- Redux와 Thunk를 사용한 상태관리 경험이 있으며 활용할 수 있습니다.
             \n- React-Router를 활용한 SPA 개발 경험이 있고, 활용할 수 있습니다.
             \n- json-server를 활용하여 가상의 서버 공간을 만들고 개발할 수 있습니다.
-            \n- 다양한 외부 API를 활용한 개발 경험이 있습니다.
+            \n- 외부 API를 활용한 개발 경험이 있습니다.
             \n- 다양한 React Hooks를 사용할 수 있습니다.
             \n      * useState  * useEffect *useContext
             \n      * useReducer    *useMemo    *useRef
@@ -115,7 +114,7 @@ const Home = () => {
                     <span>Developer</span>
                 </div>
                 <div className="img_wrap">
-                    <img src="" alt="" />
+                    <img src={"img/취업사진.jpg"} alt="" />
                 </div>
                 <h2 className='name'>조성홍</h2>
             </div>

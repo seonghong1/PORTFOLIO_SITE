@@ -56,7 +56,7 @@ const About = () => {
       <div data-aos-duration="1000" data-aos="flip-left" className="about_main">
         <div className="top">
           <div className="img_wrap">
-            <img src="" alt="" />
+            <img src={"img/취업사진.jpg"} alt="" />
           </div>
           <h3 className="name">조성홍</h3>
         </div>

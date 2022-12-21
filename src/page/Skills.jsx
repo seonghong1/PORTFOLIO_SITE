@@ -14,11 +14,10 @@ const Skills = () => {
     const skill_items = [
         {
              id: 1, img: "img/react.png", title:"React", 
-             text: `- Redux를 활용한 상태관리 경험이 있으며 활용할 수 있습니다.
-                \n- Redux-Thunk를 활용하여 비동기형태로 구현할 수 있습니다..
+             text: `- Redux와 Thunk를 사용한 상태관리 경험이 있으며 활용할 수 있습니다.
                 \n- React-Router를 활용한 SPA 개발 경험이 있고, 활용할 수 있습니다.
                 \n- json-server를 활용하여 가상의 서버 공간을 만들고 개발할 수 있습니다.
-                \n- 다양한 외부 API를 활용한 개발 경험이 있습니다.
+                \n- 외부 API를 활용한 개발 경험이 있습니다.
                 \n- 다양한 React Hooks를 사용할 수 있습니다.
                 \n      * useState  * useEffect *useContext
                 \n      * useReducer    *useMemo    *useRef

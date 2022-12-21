@@ -46,6 +46,7 @@ const project = [
     github:"https://github.com/seonghong1/REACT_MovieSite",
     siteUrl:"https://master--seonghong-moviesite.netlify.app/"
   },
+  /*
   {
     title: "Project name",
     pc_img: ["/project/프로젝트_날씨앱_pc01.png", "/project/프로젝트_날씨앱_pc02.png"],
@@ -57,7 +58,7 @@ const project = [
     github:"",
     siteUrl:""
   },
-
+*/
   {
     title: "🌟조성홍의 포트폴리오 사이트🌟",
     pc_img: ["project/프로젝트_포트폴리오_pc01.png", "project/프로젝트_포트폴리오_pc02.png", "project/프로젝트_포트폴리오_pc03.png", "project/프로젝트_포트폴리오_pc04.png"],

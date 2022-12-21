@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="contact_item_wrap">
           <div className="contact_left">
             <div className="img_wrap">
-              <img src="" alt="" />
+              <img src={"img/취업사진.jpg"} alt="" />
             </div>
             <div className="name">조성홍</div>
           </div>
@@ -34,10 +34,10 @@ const Contact = () => {
 
             </div>
             <div className="sns">
-              <a data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="900" className="github" href='https://github.com/seonghong1'></a>
-              <a data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" className="kakao" href=''></a>
-              <a data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1100" className="insta" href=''></a>
-              <a data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1200" className="gmail" href="mailto:whtjdghd0127@gmail.com"></a>
+              <a data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="900" className="github" target="_blank" href='https://github.com/seonghong1'></a>
+              <a data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" className="kakao" target="_blank" href='https://open.kakao.com/o/sGGXZEUe'></a>
+              <a data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1100" className="insta" target="_blank" href='https://www.instagram.com/jo_seonghong/'></a>
+              <a data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1200" className="gmail" target="_blank" href="mailto:whtjdghd0127@gmail.com"></a>
             </div>
           </div>
         </div>
